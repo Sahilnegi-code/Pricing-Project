@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;1,400&display=swap");
+
+:root {
+  font-size: 62.5%;
+  font-family: Montserrat;
+}
+.bg-image {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("./images/bg-top.svg"), url("./images/bg-bottom.svg");
+  background-position: top right, bottom left;
+  background-repeat: no-repeat;
+  background-color: rgb(244 245 251);
+}
+/* .btn-container {
+  background-color: ;
+} */
+.top-section-heading {
+  color: #7b7474;
+}
+.top-section-semiheading {
+  color: grey;
+  font-size: 0.6rem;
+  margin: 0 15px 0 15px;
+}
+.main-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* #######  utility classes ###### */
+.text-center {
+  text-align: center;
+}
+.header-price .basic {
+  color: grey;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.header-price .price-design {
+  font-weight: 700;
+}
+.dollar {
+  font-size: 38px;
+  display: inline-block;
+  padding-bottom: 4px;
+  height: 100%;
+  margin-right: 5px;
+} 
+ 
+.btn {
+  border: 2px solid rgba(55, 55, 148, 0.661);
+  background-image: linear-gradient(
+    to right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  font-size: 1.5rem;
+  font-weight: 500;
+  /* 20px */
+  border: none;
+  padding: 0.4em 4.5em 0.4em 4.5em;
+  color: white;
+  border-radius: 5px;
+  display: block;
+  margin: auto;
+}
+.hr {
+  background-color: hsla(231, 10%, 86%, 0.639);
+  height: 1px;
+  border: none;
+}
+/* #######  utility classes ###### */
+.used-blue-color {
+  background-image: linear-gradient(
+    to right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  ) !important;
+}
+.used-blue {
+  color: #7070be;
+}
+
+.bg-white {
+  background: white;
+}
+.price-design {
+  font-size: 5rem;
+}
+.white {
+  color: white !important;
+}
+.btn-container {
+  margin: 3em 0 3em 0;
+  cursor: pointer;
+}
+.btn-container .btn:hover {
+  cursor: pointer;
+}
+.btn-container {
+  cursor: pointer;
+}
+.btn-container .used-blue:hover {
+  /* background-color: white ; */
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  padding: 0.4em 4em 0.4em 4em;
+  border: 0.5px solid white;
+}
+.details h1 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  color: grey;
+}
+.container {
+  display: flex;
+  width: 900px;
+  height: 400px;
+}
+.box3 {
+  align-self: center;
+}
+.box1 {
+  align-self: center;
+}
+.box {
+  width: 600px;
+  /* border: 2px solid red;  */
+  padding: 30px 30px 0 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgb(151, 158, 200) 10px 0px 31px;
+}
+.mid-box {
+  width: 500px;
+  padding: 30px 30px 0 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgb(151, 158, 200) 10px 0px 31px;
+}
+.top-section {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* ### toggle ### */
+
+.btn-container .btnToHover:hover {
+  background: white;
+  color: #7070be;
+  border: 1px solid #7070be;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 4rem;
+  height: 2rem;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 2rem;
+  transition: all 0.3s linear;
+}
+
+.switch::after {
+  content: "";
+  position: absolute;
+  top: 0.1rem;
+  left: 0.1rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: all 0.3s linear;
+}
+
+input[type="checkbox"]:checked + .switch:after {
+  translate: 2rem 0;
+}
+
+input[type="checkbox"]:checked + .switch {
+  background-color: #7983ff;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+/* ### toggle ### */
